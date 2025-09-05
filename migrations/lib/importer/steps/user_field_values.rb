@@ -2,12 +2,16 @@
 
 module Migrations::Importer::Steps
   class UserFieldValues < ::Migrations::Importer::CopyStep
-    depends_on :user_fields
+    depends_on :users, :user_fields
 
-    requires_set :existing_user_field_values,
-                 "SELECT user_id, name FROM user_custom_fields WHERE user_id > 0"
+    requires_set :existing_user_field_values, <<~SQL
+      SELECT user_id, name
+      FROM user_custom_fields
+      WHERE user_id > 0 AND name LIKE '#{User::USER_FIELD_PREFIX}%'
+    SQL
 
-    column_names %i[created_at field_id user_id name value]
+    table_name :user_custom_fields
+    column_names %i[created_at updated_at user_id name value]
 
     total_rows_query <<~SQL, MappingType::USER_FIELDS, MappingType::USERS
       SELECT COUNT(*)
@@ -18,6 +22,7 @@ module Migrations::Importer::Steps
            JOIN mapped.ids mapped_user
              ON user_custom_fields.user_id = mapped_user.original_id
                AND mapped_user.type = ?2
+      WHERE user_custom_fields.field_id IS NOT NULL
     SQL
 
     rows_query <<~SQL, MappingType::USER_FIELDS, MappingType::USERS
@@ -31,6 +36,7 @@ module Migrations::Importer::Steps
             JOIN mapped.ids mapped_user
               ON user_custom_fields.user_id = mapped_user.original_id
                AND mapped_user.type = ?2
+      WHERE user_custom_fields.field_id IS NOT NULL
       ORDER BY user_custom_fields.user_id
     SQL
 

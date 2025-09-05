@@ -25,7 +25,7 @@ module Migrations::Database::IntermediateDB
       created_at: nil,
       field_id: nil,
       is_multiselect_field: nil,
-      name:,
+      name: nil,
       user_id:,
       value: nil
     )

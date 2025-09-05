@@ -14,6 +14,7 @@ module Migrations::Database::IntermediateDB
         ?, ?, ?, ?, ?
       )
     SQL
+    private_constant :SQL
 
     def self.create(
       created_at: nil,
