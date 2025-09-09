@@ -538,8 +538,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       jsuites:
-        specifier: ^5.9.0
-        version: 5.9.0
+        specifier: ^5.13.1
+        version: 5.13.1
       loader.js:
         specifier: ^4.7.0
         version: 4.7.0
@@ -2054,6 +2054,7 @@ packages:
   '@faker-js/faker@9.4.0':
     resolution: {integrity: sha512-85+k0AxaZSTowL0gXp8zYWDIrWclTbRPg/pm/V0dSFZ6W6D4lhcG3uuZl4zLsEKfEvs69xDbLN2cHQudwp95JA==}
     engines: {node: '>=18.0.0', npm: '>=9.0.0'}
+    deprecated: Please update to a newer version
 
   '@floating-ui/core@1.6.7':
     resolution: {integrity: sha512-yDzVT/Lm101nQ5TCVeK65LtdN7Tj4Qpr9RTXJ2vPFLqtLxwOrpoxAHAJI8J3yYWUc40J0BDBheaitK5SJmno2g==}
@@ -5814,8 +5815,8 @@ packages:
   jspreadsheet-ce@4.15.0:
     resolution: {integrity: sha512-1A1q7uxICxzXRiql3ZhXldFPjdt5VcFcoHSEvfvBFw9DcU7bq/gAEaqyKMJPeG+6zibpO4r+b8Dk88nIR7NKng==}
 
-  jsuites@5.9.0:
-    resolution: {integrity: sha512-Aa+d9sq4X/ojuvzLk127B42D1IYZoq/qcBr0du98h2Otpub+poNHa98gl0vAeTK+gGNT/+6zB2hMMyhzehozeA==}
+  jsuites@5.13.1:
+    resolution: {integrity: sha512-puGzaMbe5w2xdzNZXJnCBhyNAq96z2fDBVAcYH6gUBZSMLOoHxz7wnv3bE8tmnfbz7eCd/m7TvTXQFASb2ItwQ==}
 
   just-diff-apply@5.5.0:
     resolution: {integrity: sha512-OYTthRfSh55WOItVqwpefPtNt2VdKsq5AnAK6apdtR6yCH8pr0CmSr710J0Mf+WdQy7K/OzMy7K2MgAfdQURDw==}
@@ -6419,6 +6420,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -14728,9 +14730,9 @@ snapshots:
   jspreadsheet-ce@4.15.0:
     dependencies:
       '@jspreadsheet/formula': 2.0.2
-      jsuites: 5.9.0
+      jsuites: 5.13.1
 
-  jsuites@5.9.0: {}
+  jsuites@5.13.1: {}
 
   just-diff-apply@5.5.0: {}
 
