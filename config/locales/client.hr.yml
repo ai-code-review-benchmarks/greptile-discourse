@@ -228,7 +228,7 @@ hr:
       pl_PL:
         name: poljski
       pt:
-        name: portugalskicomposer
+        name: portugalski
       pt_BR:
         name: portugalski
       ro:
@@ -5896,6 +5896,7 @@ hr:
             publish_read_state: "U grupnim porukama objavite stanje čitanja"
           membership:
             automatic: Automatska
+            automatic_tooltip: "Ova grupa je automatska, ne možete je izbrisati, a članovi se dodaju i uklanjaju automatski."
             trust_levels_title: "Razina povjerenja dodjeljenja novim članovima:"
             effects: Efekti
             trust_levels_none: "ništa"
