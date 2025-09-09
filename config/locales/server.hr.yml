@@ -417,12 +417,19 @@ hr:
       trust_level_3: "razina_povjerenja_3"
       trust_level_4: "razina_povjerenja_4"
     default_descriptions:
+      admins: "Odgovorni za konfiguriranje i održavanje ove stranice, s pristupom svim podacima o članovima i aktivnostima"
       moderators: "Odgovorni za odgovaranje na oznake, moderiranje rasprava i pomoć članovima s njihovim računima"
   education:
     until_posts:
       one: "%{count} objava"
       few: "%{count} objava"
       other: "%{count} objava"
+    "new-topic": |
+      Hvala na doprinosu u %{site_name}!
+
+      Prije nego što objavite, odaberite kategoriju ili oznaku kako biste grupirali ovu temu s povezanim raspravama kako bi je drugi lakše pronašli.
+
+      Za više savjeta i uputa o sudjelovanju u našoj zajednici, [pogledajte naše smjernice zajednice](%{base_path}/smjernice).
   activerecord:
     attributes:
       category:
