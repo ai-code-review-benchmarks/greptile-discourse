@@ -98,8 +98,8 @@ importers:
         specifier: ^2.6.2
         version: 2.6.2(encoding@0.1.13)
       lint-to-the-future-ember-template:
-        specifier: ^3.0.0
-        version: 3.0.0(ember-template-lint@6.1.0)
+        specifier: ^3.1.0
+        version: 3.1.0(ember-template-lint@6.1.0)
       lint-to-the-future-eslint:
         specifier: ^2.2.0
         version: 2.2.0(eslint@9.19.0)
@@ -2054,6 +2054,7 @@ packages:
   '@faker-js/faker@9.4.0':
     resolution: {integrity: sha512-85+k0AxaZSTowL0gXp8zYWDIrWclTbRPg/pm/V0dSFZ6W6D4lhcG3uuZl4zLsEKfEvs69xDbLN2cHQudwp95JA==}
     engines: {node: '>=18.0.0', npm: '>=9.0.0'}
+    deprecated: Please update to a newer version
 
   '@floating-ui/core@1.6.7':
     resolution: {integrity: sha512-yDzVT/Lm101nQ5TCVeK65LtdN7Tj4Qpr9RTXJ2vPFLqtLxwOrpoxAHAJI8J3yYWUc40J0BDBheaitK5SJmno2g==}
@@ -3857,6 +3858,9 @@ packages:
   content-tag@3.1.1:
     resolution: {integrity: sha512-94puwVk6X8oJcbRIEY03UM80zWzA3dYgGkOiRJzeY1vXgwrFUh3OolDDi/D7YBa6Vsx+CgAvuk4uXlB8loZ1FA==}
 
+  content-tag@3.1.3:
+    resolution: {integrity: sha512-4Kiv9mEroxuMXfWUNUHcljVJgxThCNk7eEswdHMXdzJnkBBaYDqDwzHkoh3F74JJhfU3taJOsgpR6oEGIDg17g==}
+
   content-type@1.0.5:
     resolution: {integrity: sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==}
     engines: {node: '>= 0.6'}
@@ -4021,6 +4025,15 @@ packages:
 
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.4.1:
+    resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -5166,6 +5179,10 @@ packages:
     resolution: {integrity: sha512-s3Fq41ZVh7vbbe2PN3nrW7yC7U7MFVc5c98/iTl9c2GawNMKx/J648KQRW6WKkuU8GIbbh2IXfIRQjOZnXcTnw==}
     engines: {node: '>=18'}
 
+  globby@14.1.0:
+    resolution: {integrity: sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA==}
+    engines: {node: '>=18'}
+
   globjoin@0.1.4:
     resolution: {integrity: sha512-xYfnw62CKG8nLkZBfWbhWwDw02CHty86jfPcc2cr3ZfeuK9ysoVPPEUxf21bAD/rWAgk52SuBrLJlefNy8mvFg==}
 
@@ -5356,6 +5373,10 @@ packages:
 
   ignore@7.0.3:
     resolution: {integrity: sha512-bAH5jbK/F3T3Jls4I0SO1hmPR0dKU0a7+SY6n1yzRtG54FLO8d6w/nxLFX2Nb7dBu6cCWXPaAME6cYqFUMmuCA==}
+    engines: {node: '>= 4'}
+
+  ignore@7.0.5:
+    resolution: {integrity: sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==}
     engines: {node: '>= 4'}
 
   immer@10.1.1:
@@ -5942,8 +5963,8 @@ packages:
   linkify-it@5.0.0:
     resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
 
-  lint-to-the-future-ember-template@3.0.0:
-    resolution: {integrity: sha512-gFtm2jTnOslVoYPpgkcGk+lAKHZa/WHugU0kMJOR6H3b/mib0MYM8buXctSfnrTMqbWcp/XcCs74zUycJeWxiA==}
+  lint-to-the-future-ember-template@3.1.0:
+    resolution: {integrity: sha512-MtSKzKEJqbORwnKjaezhdfBby+0w5sXnbCUKMzobvD+kjwoiVX2N1fiHVmno7j54uy2z2YmWGdz+26hAwQO+wQ==}
     engines: {node: 18.* || 20.* || >= 22.*}
     peerDependencies:
       ember-template-lint: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
@@ -6419,6 +6440,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -6805,6 +6827,10 @@ packages:
   path-type@5.0.0:
     resolution: {integrity: sha512-5HviZNaZcfqP95rwpv+1HDgUamezbqdSYTyzjTvwtJSnIH+3vnbmWsItli8OFEndS984VT55M3jduxZbX351gg==}
     engines: {node: '>=12'}
+
+  path-type@6.0.0:
+    resolution: {integrity: sha512-Vj7sf++t5pBD637NSfkxpHSMfWaeig5+DKWLhcqIYx6mWQz5hdJTGDVMQiJcw1ZYkhs7AazKDGpRVji1LJCZUQ==}
+    engines: {node: '>=18'}
 
   pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
@@ -8093,6 +8119,10 @@ packages:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
     engines: {node: '>=18'}
 
+  unicorn-magic@0.3.0:
+    resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
+    engines: {node: '>=18'}
+
   union-value@1.0.1:
     resolution: {integrity: sha512-tJfXmxMeWYnczCVs7XAEvIV7ieppALdyepWMkHkwciRpZraG/xwT+s2JN8+pr1+8jCRf80FFzvr+MpQeeoF4Xg==}
     engines: {node: '>=0.10.0'}
@@ -8577,7 +8607,7 @@ snapshots:
       '@babel/core': 7.26.7(supports-color@8.1.1)
       '@babel/helper-compilation-targets': 7.26.5
       '@babel/helper-plugin-utils': 7.25.9
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       lodash.debounce: 4.0.8
       resolve: 1.22.10
     transitivePeerDependencies:
@@ -8588,7 +8618,7 @@ snapshots:
       '@babel/core': 7.26.7(supports-color@8.1.1)
       '@babel/helper-compilation-targets': 7.26.5
       '@babel/helper-plugin-utils': 7.25.9
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       lodash.debounce: 4.0.8
       resolve: 1.22.10
     transitivePeerDependencies:
@@ -10361,7 +10391,7 @@ snapshots:
 
   '@puppeteer/browsers@2.7.0':
     dependencies:
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       extract-zip: 2.0.1
       progress: 2.0.3
       proxy-agent: 6.5.0
@@ -10950,7 +10980,7 @@ snapshots:
 
   async-disk-cache@2.1.0:
     dependencies:
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       heimdalljs: 0.2.6
       istextorbinary: 2.6.0
       mkdirp: 0.5.6
@@ -11600,7 +11630,7 @@ snapshots:
       async-promise-queue: 1.0.5
       broccoli-plugin: 4.0.7
       convert-source-map: 2.0.0
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       lodash.defaultsdeep: 4.6.1
       matcher-collection: 2.0.1
       symlink-or-copy: 1.3.1
@@ -11995,6 +12025,8 @@ snapshots:
 
   content-tag@3.1.1(patch_hash=lgdkxhmahesfzwpl4vwprolz5m): {}
 
+  content-tag@3.1.3: {}
+
   content-type@1.0.5: {}
 
   continuable-cache@0.3.1: {}
@@ -12141,6 +12173,12 @@ snapshots:
       ms: 2.1.3
 
   debug@4.4.0(supports-color@8.1.1):
+    dependencies:
+      ms: 2.1.3
+    optionalDependencies:
+      supports-color: 8.1.1
+
+  debug@4.4.1(supports-color@8.1.1):
     dependencies:
       ms: 2.1.3
     optionalDependencies:
@@ -12511,7 +12549,7 @@ snapshots:
     dependencies:
       '@babel/plugin-transform-typescript': 7.5.5(@babel/core@7.26.7)
       ansi-to-html: 0.6.15
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       ember-cli-babel-plugin-helpers: 1.1.1
       execa: 2.1.0
       fs-extra: 8.1.0
@@ -12528,7 +12566,7 @@ snapshots:
     dependencies:
       ansi-to-html: 0.6.15
       broccoli-stew: 3.0.0
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       execa: 4.1.0
       fs-extra: 9.1.0
       resolve: 1.22.8
@@ -13487,7 +13525,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -13929,7 +13967,7 @@ snapshots:
     dependencies:
       basic-ftp: 5.0.5
       data-uri-to-buffer: 6.0.2
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -14073,6 +14111,15 @@ snapshots:
       path-type: 5.0.0
       slash: 5.1.0
       unicorn-magic: 0.1.0
+
+  globby@14.1.0:
+    dependencies:
+      '@sindresorhus/merge-streams': 2.3.0
+      fast-glob: 3.3.3
+      ignore: 7.0.5
+      path-type: 6.0.0
+      slash: 5.1.0
+      unicorn-magic: 0.3.0
 
   globjoin@0.1.4: {}
 
@@ -14224,7 +14271,7 @@ snapshots:
   http-proxy-agent@7.0.2(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.3
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -14239,7 +14286,7 @@ snapshots:
   https-proxy-agent@7.0.6(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.3
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -14272,6 +14319,8 @@ snapshots:
   ignore@5.3.2: {}
 
   ignore@7.0.3: {}
+
+  ignore@7.0.5: {}
 
   immer@10.1.1: {}
 
@@ -14861,11 +14910,14 @@ snapshots:
     dependencies:
       uc.micro: 2.1.0
 
-  lint-to-the-future-ember-template@3.0.0(ember-template-lint@6.1.0):
+  lint-to-the-future-ember-template@3.1.0(ember-template-lint@6.1.0):
     dependencies:
-      content-tag: 3.1.1(patch_hash=lgdkxhmahesfzwpl4vwprolz5m)
+      content-tag: 3.1.3
+      debug: 4.4.1(supports-color@8.1.1)
       ember-template-lint: 6.1.0
-      walk-sync: 2.2.0
+      globby: 14.1.0
+    transitivePeerDependencies:
+      - supports-color
 
   lint-to-the-future-eslint@2.2.0(eslint@9.19.0):
     dependencies:
@@ -15656,7 +15708,7 @@ snapshots:
     dependencies:
       '@tootallnate/quickjs-emscripten': 0.23.0
       agent-base: 7.1.3
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       get-uri: 6.0.4
       http-proxy-agent: 7.0.2(supports-color@8.1.1)
       https-proxy-agent: 7.0.6(supports-color@8.1.1)
@@ -15764,6 +15816,8 @@ snapshots:
   path-type@4.0.0: {}
 
   path-type@5.0.0: {}
+
+  path-type@6.0.0: {}
 
   pend@1.2.0: {}
 
@@ -15929,7 +15983,7 @@ snapshots:
   proxy-agent@6.5.0:
     dependencies:
       agent-base: 7.1.3
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       http-proxy-agent: 7.0.2(supports-color@8.1.1)
       https-proxy-agent: 7.0.6(supports-color@8.1.1)
       lru-cache: 7.18.3
@@ -16526,7 +16580,7 @@ snapshots:
   socks-proxy-agent@8.0.5:
     dependencies:
       agent-base: 7.1.3
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       socks: 2.8.3
     transitivePeerDependencies:
       - supports-color
@@ -16640,7 +16694,7 @@ snapshots:
 
   stagehand@1.0.1:
     dependencies:
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -16890,7 +16944,7 @@ snapshots:
 
   sync-disk-cache@2.1.0:
     dependencies:
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       heimdalljs: 0.2.6
       mkdirp: 0.5.6
       rimraf: 3.0.2
@@ -17199,7 +17253,7 @@ snapshots:
   tuf-js@2.2.1:
     dependencies:
       '@tufjs/models': 2.0.1
-      debug: 4.4.0(supports-color@8.1.1)
+      debug: 4.4.1(supports-color@8.1.1)
       make-fetch-happen: 13.0.1
     transitivePeerDependencies:
       - supports-color
@@ -17305,6 +17359,8 @@ snapshots:
   unicode-property-aliases-ecmascript@2.1.0: {}
 
   unicorn-magic@0.1.0: {}
+
+  unicorn-magic@0.3.0: {}
 
   union-value@1.0.1:
     dependencies:
